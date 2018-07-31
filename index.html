@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Location Velib'</title>
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+
+<body>    
+    <header>
+        <img src="images/logo.png" id="logo" />
+    </header>
+    
+    <section id="slider">
+        <div id="slideshow">
+            <span id="prev">&#9001;</span>
+            <span id="next">&#9002;</span>
+        </div>
+    </section>
+    
+    <section id="main-wrap">
+        <div id="map"></div>
+    </section>
+    
+    <aside id="block-details">
+        <h4>Détail de la station</h4>
+        <div id="station-details">
+            <p id="adresse"></p>
+            <div class="details">
+                <i class="fa fa-address-book" aria-hidden="true" id="fa-address"></i>
+                <p id="station-name"></p>
+            </div>
+            <div class="details">
+                <i class="fa fa-pie-chart" aria-hidden="true" id="fa-pie"></i>
+                <p id="number-stand"></p>
+            </div>
+            <div class="details">
+                <i class="fa fa-bicycle" aria-hidden="true" id="fa-bike"></i>
+                <p id="number-velib"></p>
+            </div>
+        </div>
+        <button id="reserver">Réserver</button>
+        <button id="confirmer" style="display: none;">Confirmer</button>
+        <div id="confirm-signature">
+            <div id="up-arrow"></div>
+            <canvas id="canvas" width= "200px" height= "100px"></canvas>
+            <div id="fa">
+                <i class="fa fa-pencil" aria-hidden="true" id="write"></i>
+                <i class="fa fa-undo" aria-hidden="true" id="erase"></i>
+            </div>
+        </div>
+    </aside>
+    
+    <footer id="footer">
+        <p>Un vélo est réservé à la station <span id="station"></span> pour <span id="minutes">20</span>min <span id="secondes">00</span>s</p>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRW9AnnDD6PNkNf2wJ4n5bC1mQuXCrN5A&callback=initMap" type="text/javascript"></script>
+    <script src="https://api.jcdecaux.com/vls/v1/stations?contract=Paris&apiKey=539f0abd81237b56d47a706d12df977c7fc78888" type="text/javascript"></script>
+    <script src="https://use.fontawesome.com/e770fd7294.js"></script>
+    <script src="js/markerclusterer.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/diapo.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/resa.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

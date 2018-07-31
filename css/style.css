@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: rgb(38, 51, 64);
+}
+header {
+    height: 120px;
+    position: relative;
+    box-shadow: 0 6px 6px -6px black;
+}
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+}
+#slider {
+    padding: 100px 0;
+    background-image: linear-gradient(90deg, #dc1681 0, #6793c8);
+
+}
+#slideshow {
+    width: 800px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    box-shadow: 8px 8px 6px -6px black;
+    overflow: hidden;
+}
+.slide-container {
+    height: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+}
+#prev, #next {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	position: absolute;
+	width: 20%;
+	color: #FFF;
+	background-color: rgb(255, 255, 255, 0.7);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+    opacity: 0;
+    transition: opacity .2s;
+	top: 0;
+	line-height: 400px;
+	text-align: center;
+	font-size: 300%;
+	cursor: pointer;
+}
+.slide-container:hover ~ #prev, .slide-container:hover ~ #next {
+    opacity: 0.7;
+}
+#prev:hover, #next:hover {
+    opacity: 1;
+}
+#prev {
+	left: 0;
+}
+#next {
+	right: 0;
+}
+#main-wrap {
+    background-color: rgb(38, 51, 64);
+    -webkit-box-shadow: inset 0 0 6px #000000;
+    -moz-box-shadow: inset 0 0 6px #000000;
+    box-shadow: inset 0 0 6px #000000;
+    padding: 50px 0;
+}
+#map {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 5px 8px 6px -6px black;
+}
+#block-details {
+    display: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 25px 5%;
+    width: 100%;
+    background-color: #FFF;
+    text-align: center;
+}
+#block-details h4 {
+    text-align: center;
+    margin: 0;
+    font-size: 3em;
+}
+#block-details #station-details {
+    padding-top: 10px;
+    text-align: center;
+}
+.details {
+    width: 300px;
+    padding: 20px 0;
+}
+#block-details p {
+    display: inline-block;
+}
+.details i {
+    display: inline-block;
+    font-size: 8em;
+    width: 128px;
+    height: 128px;
+    margin: 0px 5% 20px 5%;
+}
+#fa-address {
+    color : rgb(0,155,183);
+}
+#fa-pie {
+    color: rgb(220,22,129);
+}
+#fa-bike {
+    color: rgb(176,183,15);
+}
+#block-details button {
+    color: #FFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px auto;
+    border: none;
+    font-size: 2em;
+    background-color: rgb(38, 51, 64);
+    box-shadow: 3px 6px 6px -6px black;
+    cursor: pointer;
+}
+#confirm-signature {
+    display: none;
+    background-color: rgb(233, 233, 233);
+    width: 300px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 6px -6px black;
+}
+#up-arrow{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(233, 233, 233);
+    position: relative;
+    top: -10px;
+    left: 140px;
+}
+#fa {
+    display: inline-block;
+    margin-left: 20px;
+}
+#confirm-signature i {
+    display: block;
+    font-size: 1.2em;
+}
+#canvas {
+    border: 2px solid black;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+    background-color: rgba(233, 233, 233, 0.7);
+}
+#footer {
+    display: none;
+    height: 300px;
+    background-image: linear-gradient(90deg, #dc1681 0, #6793c8);
+    position: relative;
+}
+#footer p {
+    font-size: 2.5em;
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    text-align: center;
+}
+#station {
+    font-weight: 800;
+}
